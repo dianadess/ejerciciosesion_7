@@ -1,0 +1,35 @@
+/* transicion de imagenes con CSS */
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-image: url(./imagen/img-fondo.jpg);
+    margin-top: 4rem;
+    
+}
+.header{
+    background-color: rgb(243, 118, 15);
+    
+}
+.titulo{
+    color: black;
+    text-align: center;
+    
+}
+.imagenes{
+    display: flex;
+        transition: .5s ease;
+}
+.imagenes img:hover{
+    cursor: pointer;
+    width: 200px;
+    filter: contrast(120%);
+}
+.img1,.img2, .img3, .img4{
+    border-radius: 20px;
+    border: 5px solid white;
+    flex-grow: 0.1;
+    width: 90px;
+
+}
+
